@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.myquiz.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.myquiz.MainActivity">
+
+        <TextView
+            style="@style/sectionHeader"
+            android:paddingBottom="20dp"
+            android:text="@string/title" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:text="@string/introduction"
+            android:textSize="23sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/sectionHeader"
+            android:paddingBottom="20dp"
+            android:text="@string/personal_info" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_email"/>
+
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"
+            android:inputType="textEmailAddress" />
+
+        <CheckBox android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_to_users_database"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_spain" />
+
+        <RadioGroup
+            android:id="@+id/country_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_1"
+                android:text="@string/city_madrid" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_prague" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_warsaw" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_france" />
+
+        <RadioGroup
+            android:id="@+id/country_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_reykjavik" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_2"
+                android:text="@string/city_paris" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_yerevan" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_england" />
+
+        <RadioGroup
+            android:id="@+id/country_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_andorra" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_astana" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_3"
+                android:text="@string/city_london" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_denmark" />
+
+        <RadioGroup
+            android:id="@+id/country_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_4"
+                android:text="@string/city_copenhagen" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_belgrade" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_baku" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_greece" />
+
+        <RadioGroup
+            android:id="@+id/country_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_heksinki" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_5"
+                android:text="@string/city_athens" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_kiev" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_turkey" />
+
+        <RadioGroup
+            android:id="@+id/country_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_ljubljana" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_zagreb" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_6"
+                android:text="@string/city_ankara" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_sweden" />
+
+        <RadioGroup
+            android:id="@+id/country_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_7"
+                android:text="@string/city_stockholm" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_monaco" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_moscow" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_switzerland" />
+
+        <RadioGroup
+            android:id="@+id/country_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_berlin" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_8"
+                android:text="@string/city_bern" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_brussels" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_portugal" />
+
+        <RadioGroup
+            android:id="@+id/country_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_zagreb" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_chisnau" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_9"
+                android:text="@string/city_lisbon" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/question_country"
+            android:text="@string/country_italy" />
+
+        <RadioGroup
+            android:id="@+id/country_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/question_option"
+                android:id="@+id/right_city_10"
+                android:text="@string/city_rome" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_oslo" />
+
+            <RadioButton
+                style="@style/question_option"
+                android:text="@string/city_riga" />
+        </RadioGroup>
+
+        <Button
+            style="@style/submit_button"
+            android:onClick="submitAnswer"
+            android:text="@string/button_text" />
+
+        <Button
+            style="@style/submit_button"
+            android:visibility="invisible"
+            android:onClick="sendReport"
+            android:id="@+id/send_report_button"
+            android:text="@string/report_button_text" />
+
+    </LinearLayout>
+
+</ScrollView>
