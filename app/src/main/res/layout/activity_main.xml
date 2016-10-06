@@ -22,8 +22,7 @@
             android:text="@string/title" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/fullRow"
             android:paddingBottom="16dp"
             android:text="@string/introduction"
             android:textSize="23sp" />
@@ -40,20 +39,17 @@
 
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/fullRow"
             android:text="@string/get_email"/>
 
         <EditText
             android:id="@+id/email_address"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            style="@style/fullRow"
             android:hint="@string/email_hint"
             android:inputType="textEmailAddress" />
 
         <CheckBox android:id="@+id/checkbox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/fullRow"
             android:text="@string/add_to_users_database"/>
 
         <View
@@ -67,8 +63,7 @@
 
         <RadioGroup
             android:id="@+id/country_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -95,8 +90,7 @@
 
         <RadioGroup
             android:id="@+id/country_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -123,8 +117,7 @@
 
         <RadioGroup
             android:id="@+id/country_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -151,8 +144,7 @@
 
         <RadioGroup
             android:id="@+id/country_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -179,8 +171,7 @@
 
         <RadioGroup
             android:id="@+id/country_5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -207,8 +198,7 @@
 
         <RadioGroup
             android:id="@+id/country_6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -235,8 +225,7 @@
 
         <RadioGroup
             android:id="@+id/country_7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -263,8 +252,7 @@
 
         <RadioGroup
             android:id="@+id/country_8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -291,8 +279,7 @@
 
         <RadioGroup
             android:id="@+id/country_9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -319,8 +306,7 @@
 
         <RadioGroup
             android:id="@+id/country_10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            style="@style/fullRow">
 
             <RadioButton
                 style="@style/question_option"
@@ -341,22 +327,55 @@
             android:layout_height="1dp"
             android:background="@color/colorPrimaryDark" />
 
+        <TextView
+            style="@style/fullRow"
+            android:text="@string/capital_spain_question"/>
 
         <CheckBox
+            style="@style/fullRow"
+            android:text="@string/city_madrid"
+            android:id="@+id/madrid_checkbox"/>
+
+        <CheckBox
+            style="@style/fullRow"
+            android:text="@string/city_barcelona"
+            android:id="@+id/barcelona_checkbox"/>
+
+        <CheckBox
+            style="@style/fullRow"
+            android:text="@string/city_toledo"
+            android:id="@+id/toledo_checkbox"/>
+
+        <View
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            style="@style/fullRow"
+            android:text="@string/capital_japan_question"/>
+
+        <EditText
+            style="@style/fullRow"
+            android:id="@+id/tokio_capital_input"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+        <CheckBox
+            style="@style/fullRow"
             android:id="@+id/verify_checkbox"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:text="@string/verify"/>
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/fullRow"
             android:text="@string/signature"/>
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/fullRow"
             android:id="@+id/signature_text"
             android:hint="@string/signature_hint"/>
 

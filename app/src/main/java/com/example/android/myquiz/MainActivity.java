@@ -92,6 +92,19 @@ public class MainActivity extends AppCompatActivity {
             correctAnswers++;
         }
 
+        CheckBox madridCheckbox = (CheckBox) findViewById(R.id.madrid_checkbox);
+        CheckBox barcelonaCheckbox = (CheckBox) findViewById(R.id.barcelona_checkbox);
+        CheckBox toledoCheckbox = (CheckBox) findViewById(R.id.toledo_checkbox);
+
+        if(madridCheckbox.isChecked() && !barcelonaCheckbox.isChecked() && toledoCheckbox.isChecked()) {
+            correctAnswers++;
+        }
+
+        EditText japanCapital = (EditText) findViewById(R.id.tokio_capital_input);
+        if(japanCapital.getText().toString().equalsIgnoreCase(getResources().getString(R.string.city_tokio))) {
+            correctAnswers++;
+        }
+
         Button sendReportButton = (Button) findViewById(R.id.send_report_button);
 
         if (correctAnswers >= 5) {
@@ -225,6 +238,17 @@ public class MainActivity extends AppCompatActivity {
         rg8.clearCheck();
         rg9.clearCheck();
         rg10.clearCheck();
+
+        CheckBox madridCheckbox = (CheckBox) findViewById(R.id.madrid_checkbox);
+        CheckBox barcelonaCheckbox = (CheckBox) findViewById(R.id.barcelona_checkbox);
+        CheckBox toledoCheckbox = (CheckBox) findViewById(R.id.toledo_checkbox);
+
+        madridCheckbox.setChecked(false);
+        barcelonaCheckbox.setChecked(false);
+        toledoCheckbox.setChecked(false);
+
+        EditText japanCapital = (EditText) findViewById(R.id.tokio_capital_input);
+        japanCapital.setText("");
 
         correctAnswers = 0;
     }

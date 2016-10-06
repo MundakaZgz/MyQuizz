@@ -78,5 +78,9 @@
     <string name="signature_hint">Juan Nadie</string>
     <string name="verification_expected">Por favor, acepta el checkbox</string>
     <string name="verify">He terminado mi quizz</string>
+    <string name="city_barcelona">Barcelona</string>
+    <string name="city_toledo">Toledo</string>
+    <string name="capital_japan_question">Escribe la capital de Japón</string>
+    <string name="capital_spain_question">¿Cuál de estas ciudades fue capital de España?</string>
 
 </resources>

@@ -79,4 +79,8 @@
     <string name="signature_hint">Jonh Doe</string>
     <string name="verification_expected">Please, check the verification checkbox</string>
     <string name="verify">I have finished my quizz</string>
+    <string name="capital_spain_question">Which of this cities was capital of Spain?</string>
+    <string name="city_barcelona">Barcelona</string>
+    <string name="city_toledo">Toledo</string>
+    <string name="capital_japan_question">Write the capital of Japan</string>
 </resources>
