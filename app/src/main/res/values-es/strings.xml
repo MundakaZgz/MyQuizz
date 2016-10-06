@@ -73,5 +73,10 @@
     <string name="add_to_users_database">Incluirme en la base de datos de usuarios</string>
     <string name="personal_info">Información personal</string>
     <string name="user_added_to_database">\nSu usuario será añadido a nuesrta base de datos de usuarios</string>
+    <string name="signature">Por favor, introduce tu nombre para asegurarnos de que no eres un robot</string>
+    <string name="signature_expected">Por favor, firma tu encuesta</string>
+    <string name="signature_hint">Juan Nadie</string>
+    <string name="verification_expected">Por favor, acepta el checkbox</string>
+    <string name="verify">He terminado mi quizz</string>
 
 </resources>

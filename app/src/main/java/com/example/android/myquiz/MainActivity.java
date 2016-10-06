@@ -23,11 +23,33 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Submits the answer
+     * @param view
+     */
     public void submitAnswer(View view) {
         validateAnswers(view);
     }
 
+    /**
+     * Validates the answers from the quizz
+     * @param view
+     */
     private void validateAnswers(View view) {
+        CheckBox verify = (CheckBox) findViewById(R.id.verify_checkbox);
+        if (!verify.isChecked()) {
+            showVerificationExpectedMessage();
+            return;
+        }
+
+        EditText signature = (EditText) findViewById(R.id.signature_text);
+        if(signature.getText().length() == 0) {
+            showSignatureExpectedMessage();
+            return;
+        }
+
+        correctAnswers = 0;
+
         RadioGroup rg1 = (RadioGroup) findViewById(R.id.country_1);
         RadioGroup rg2 = (RadioGroup) findViewById(R.id.country_2);
         RadioGroup rg3 = (RadioGroup) findViewById(R.id.country_3);
@@ -90,6 +112,9 @@ public class MainActivity extends AppCompatActivity {
         sendEmail();
     }
 
+    /**
+     * Sends the email with the suitable information
+     */
     private void sendEmail() {
 
         EditText emailAddressEditText = (EditText) findViewById(R.id.email_address);
@@ -118,6 +143,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Shows greeting message and resets the quiz
+     */
     private void showGreetingsMessage() {
         Context context = getApplicationContext();
         CharSequence text = getResources().getString(R.string.congratulations).replace("%s", Integer.toString(correctAnswers));
@@ -125,8 +153,42 @@ public class MainActivity extends AppCompatActivity {
 
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
+
+        reset();
     }
 
+    /**
+     * Shows verification message and resets the quiz
+     */
+    private void showVerificationExpectedMessage() {
+        Context context = getApplicationContext();
+        CharSequence text = getResources().getString(R.string.verification_expected);
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
+        reset();
+    }
+
+    /**
+     * Shows signature message and resets the quiz
+     */
+    private void showSignatureExpectedMessage() {
+        Context context = getApplicationContext();
+        CharSequence text = getResources().getString(R.string.signature_expected);
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+
+        reset();
+    }
+
+
+    /**
+     * Shows failure message and resets the quiz
+     */
     private void showFailMessage() {
         Context context = getApplicationContext();
         CharSequence text = getResources().getString(R.string.try_again).replace("%s", Integer.toString(correctAnswers));
@@ -138,6 +200,9 @@ public class MainActivity extends AppCompatActivity {
         reset();
     }
 
+    /**
+     * Resets the quizz
+     */
     private void reset() {
         RadioGroup rg1 = (RadioGroup) findViewById(R.id.country_1);
         RadioGroup rg2 = (RadioGroup) findViewById(R.id.country_2);

@@ -336,6 +336,30 @@
                 android:text="@string/city_riga" />
         </RadioGroup>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimaryDark" />
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verify_checkbox"
+            android:textSize="18dp"
+            android:text="@string/verify"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signature"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signature_text"
+            android:hint="@string/signature_hint"/>
+
         <Button
             style="@style/submit_button"
             android:onClick="submitAnswer"

@@ -74,4 +74,9 @@
     <string name="add_to_users_database">Add my user to the database</string>
     <string name="personal_info">Personal info</string>
     <string name="user_added_to_database">\nYour user will be added to our database</string>
+    <string name="signature">Please, enter your name so we can verify that you are not a robot</string>
+    <string name="signature_expected">Please, sign your quizz</string>
+    <string name="signature_hint">Jonh Doe</string>
+    <string name="verification_expected">Please, check the verification checkbox</string>
+    <string name="verify">I have finished my quizz</string>
 </resources>
